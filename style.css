@@ -1,12 +1,191 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  color: navy;
+  font-family: "Quicksand", sans-serif;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
 }
 
-p {
-  font-family: "Quicksand", sans-serif;
+img {
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+li {
+  list-style: "> ";
+}
+
+a {
+  text-decoration: none;
+  animation: 1s ease-in-out all;
+}
+
+a:hover {
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar {
+  padding: 0px 300px;
+  background: linear-gradient(45deg, blue, aqua);
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: blue;
+  color: aqua;
+}
+
+.container {
+  background: linear-gradient(45deg, aqua, lightblue);
+  padding: 10px 300px;
+}
+
+.banner {
+  padding: 100px 300px;
+}
+
+.card {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, whitesmoke, white);
+  border-radius: 4px;
+  max-width: 50vw;
+  border: none;
+  box-shadow: 0px 0px 8px gray;
+}
+
+.float-left {
+  float: left;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 10vw 50vw auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". sidebar content-1 ."
+    ". . content-2 ."
+    ". . content-3 .";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 20px;
+  line-height: 2;
+}
+
+.content-1 {
+  grid-area: content-1;
+  margin-bottom: auto;
+}
+
+.content-2 {
+  grid-area: content-2;
+}
+
+.content-3 {
+  grid-area: content-3;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: blue;
+  margin: 10px;
+  text-align: center;
+  font-size: xx-large;
+  color: yellow;
+}
+
+.box-sm {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 10px;
+  text-align: center;
+  font-size: xx-large;
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.footer {
+  background: cadetblue;
+  color: navy;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 10px;
+  }
+
+  .banner {
+    padding: 20px 10px;
+  }
+
+  .card {
+    margin: 0;
+    pad: 0 2px;
+    max-width: 100vh;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "sidebar"
+      "content-1"
+      "content-2"
+      "content-3";
+  }
+
+  .sidebar {
+    position: unset;
+  }
 }

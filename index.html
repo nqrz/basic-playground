@@ -15,8 +15,97 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Basic Playground</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, neque.</p>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="flex">
+      <a href="#float">float</a>
+      <a href="#grid">grid</a>
+      <a href="#flex">flex</a>
+    </div>
+  </div>
+  <div class="container banner" id="home">
+    <h1 class="text-center">Basic Playground</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, neque.</p>
+  </div>
+  <div class="container card" id="float">
+    <h1 class="text-center">float</h1>
+    <div class="float-left">
+      <img src="https://source.unsplash.com/random/150x150" alt="Photo">
+      <caption>float left</caption>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae incidunt, impedit nostrum natus voluptatem voluptate modi suscipit nobis, ducimus id alias quia iusto inventore quo iste quidem sapiente tempore maxime blanditiis optio. Totam dolorem omnis qui impedit ducimus beatae deserunt adipisci! A temporibus iure magni, doloremque repellendus fuga voluptatibus excepturi eius harum sint amet deserunt odio aut nostrum animi quae at repellat placeat, suscipit praesentium consequuntur aliquam! Ex quo magni doloremque inventore tempora. Laudantium quibusdam facilis et eveniet dicta temporibus nam, molestiae, ullam harum culpa deleniti. Voluptatum doloribus quos corrupti ea nam eveniet enim repellendus maxime vitae assumenda asperiores, molestiae, perferendis inventore vero? Cupiditate pariatur mollitia provident ea modi veniam voluptatum atque sint ab autem commodi officia tempora, velit nesciunt unde aspernatur dolorum animi explicabo omnis aperiam sed eos? Expedita nisi aspernatur modi accusantium, labore ab repellat. Reiciendis nam architecto, quibusdam nesciunt explicabo voluptates!</p>
+    <div class="float-right">
+      <img src="https://source.unsplash.com/random/150x150" alt="Photo">
+      <caption>float right</caption>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum, suscipit nam quo consequuntur voluptatibus sunt laudantium libero dignissimos incidunt, ullam placeat? Nam id doloremque earum voluptates porro suscipit, ad sit voluptatem, itaque neque facilis quo recusandae blanditiis voluptatum, eligendi dignissimos atque temporibus quisquam! Nulla possimus perspiciatis sunt cumque voluptas repudiandae fuga eveniet odit exercitationem sequi cupiditate natus doloremque, magnam dolores tenetur maiores? Officiis ea sunt, vero laboriosam reprehenderit illo, vitae animi qui tenetur ipsa dolorum cupiditate quod nihil dolorem quo quos iusto perspiciatis excepturi autem. Rem repellat maiores ullam corporis id odio nihil sequi non fugiat vel accusantium, distinctio ipsum quaerat ad officiis ipsa, explicabo reprehenderit molestias minima. Quibusdam natus aperiam nihil nisi voluptatibus architecto minima veritatis accusamus! Sed placeat ipsam inventore laborum ex, ullam sequi est, veniam aliquam, quia neque cumque reiciendis hic nihil. Delectus aliquid error cumque! Eveniet reiciendis iste ex minima!</p>
+    </div>
+  </div>
+  <h1 class="text-center" id="grid">Grid</h1>
+  <div class="container grid">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#float">Float</a>
+        </li>
+        <li>
+          <a href="#grid">Grid</a>
+        </li>
+        <li>
+          <a href="#flex">Flex</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content-1">
+      <h1>Content 1</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed porro officia tempora consequatur adipisci error placeat necessitatibus omnis. Deserunt voluptas cumque sequi a velit, reiciendis perspiciatis iusto veritatis praesentium architecto?</p>
+    </div>
+    <div class="content-2">
+      <h1>Content 2</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed porro officia tempora consequatur adipisci error placeat necessitatibus omnis. Deserunt voluptas cumque sequi a velit, reiciendis perspiciatis iusto veritatis praesentium architecto?</p>
+    </div>
+    <div class="content-3">
+      <h1>Content 3</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed porro officia tempora consequatur adipisci error placeat necessitatibus omnis. Deserunt voluptas cumque sequi a velit, reiciendis perspiciatis iusto veritatis praesentium architecto?</p>
+    </div>
+  </div>
+  <h1 class="text-center" id="flex">Flex</h1>
+  <div class="container flex">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+  <h1 class="text-center">Flex - Justify Content Center</h1>
+  <div class="container flex justify-center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+  <h1 class="text-center">Flex - Align Items Center</h1>
+  <div class="container flex align-center">
+    <div class="box">1</div>
+    <div class="box-sm">2</div>
+    <div class="box-sm">3</div>
+  </div>
+  <h1 class="text-center">Flex - Col direction</h1>
+  <div class="container flex flex-col">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+  <h1 class="text-center">Flex - flex-col + align-center</h1>
+  <div class="container flex flex-col align-center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+  <div class="footer">
+    <code><a href="nizarbaihaqi.com">nizarbaihaqi.com</a>  @2021 - Nizar Ahmad Baihaqi 😁</code>
+  </div>
   <script src="./app.js"></script>
 </body>
 </html>
