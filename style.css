@@ -32,18 +32,23 @@ a:hover {
   text-align: center;
 }
 
+.gap-1 {
+  gap: 8px;
+}
+
 .navbar {
   padding: 0px 300px;
   background: linear-gradient(45deg, blue, aqua);
   display: flex;
   justify-content: space-between;
-  color: black;
   position: sticky;
   top: 0;
 }
 
 .navbar a {
   padding: 10px 20px;
+  color: black;
+  font-weight: bold;
 }
 
 .navbar a:hover {

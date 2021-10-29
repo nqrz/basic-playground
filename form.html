@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - input</title>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+  
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <h1 class="text-center">Form - input</h1>
+  <div class="container card flex justify-center">
+    <!-- Form -->
+    <form action="/show.html" method="post" class="flex flex-col">
+      <div class="flex flex-col gap-1">
+        <label for="username">Username</label>
+        <input type="text" name="mamamama" id="username" required>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="./navbar.js"></script>
+</body>
+</html>
