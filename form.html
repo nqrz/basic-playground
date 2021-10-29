@@ -20,7 +20,7 @@
   <h1 class="text-center">Form - input</h1>
   <div class="container card flex justify-center">
     <!-- Form -->
-    <form action="/show.html" method="post" class="flex flex-col">
+    <form action="javascript:void(0);" onsubmit="app.Add()" method="post" class="flex flex-col">
       <div class="flex flex-col gap-1">
         <label for="username">Username</label>
         <input type="text" name="mamamama" id="username" required>
@@ -29,13 +29,37 @@
         <label for="email">E-Mail</label>
         <input type="email" name="email" id="email" required>
       </div>
-      <div class="flex flex-col gap-1">
+      <!-- <div class="flex flex-col gap-1">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" required>
-      </div>
+      </div> -->
       <button type="submit">Submit</button>
     </form>
   </div>
+  <div class="container card flex flex-col align-center">
+    <p id="counter" class="text-center"></p>
+    <table class="profile">
+      <tr>
+        <th>Username</th>
+        <th>E-Mail</th>
+      </tr>
+      <tbody id="profiles"></tbody>
+    </table>
+  </div>
+  <div class="container card justify-center" id="spoiler" role="aria-hidden">
+    <form action="javascript:void(0);" method="post" class="flex flex-col">
+      <div class="flex flex-col gap-1">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+      </div>
+      <div class="flex flex-col gap-1">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <button type="submit">Update</button>
+    </form>
+  </div>
   <script src="./navbar.js"></script>
+  <script src="./form.js"></script>
 </body>
 </html>
